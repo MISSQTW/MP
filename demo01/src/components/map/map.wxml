@@ -1,0 +1,8 @@
+<!--components/map/map.wxml-->
+<ec-canvas class="ec-box" ec="{{ ec }}"></ec-canvas>
+<view class="tip-box" wx:if="{{isShow}}" style="left: {{left}}px;top: {{top}}px">
+  <text>确诊人数: {{num}}例</text>
+  <view  wx:if="{{btnHidden}}" bindtap="tipClick">查看详情</view>
+</view>
+
+<button wx:if="{{!btnHidden}}" bindtap="back">666</button>
